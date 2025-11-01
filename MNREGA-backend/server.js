@@ -8,7 +8,6 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: "https://strong-queijadas-d2ec9e.netlify.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
