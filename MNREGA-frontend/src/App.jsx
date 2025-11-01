@@ -38,8 +38,8 @@ const formatNumber = (num) => {
 
     try {
       // fetch and then get data
-      await axios.get(`districtmnrega-analytics-production.up.railway.app/fetch?year=${year}`);
-      const res = await axios.get(`districtmnrega-analytics-production.up.railway.app/data?year=${year}`);
+      await axios.get(`https://districtmnrega-analytics-production.up.railway.app/fetch?year=${year}`);
+      const res = await axios.get(`https://districtmnrega-analytics-production.up.railway.app/data?year=${year}`);
       let records = res.data.records || [];
 
       if (district.trim()) {
