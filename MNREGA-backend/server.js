@@ -6,7 +6,13 @@ import axios from "axios";
 
 dotenv.config();
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://69060d06c45e874615926e70--strong-queijadas-d2ec9e.netlify.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 mongoose
